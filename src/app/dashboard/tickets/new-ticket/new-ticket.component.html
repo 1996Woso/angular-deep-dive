@@ -1,0 +1,21 @@
+<form (ngSubmit)="onSubmit(enteredTitle,enteredText)" #form>
+  <app-control label="Title">
+    <input name="title" id="title" [(ngModel)]="enteredTitle" />
+    <!-- #titleInput is a template variable-->
+  </app-control>
+  <app-control label="Request">
+    <textarea
+      name="request"
+      id="request"
+      rows="3"
+      [(ngModel)]="enteredText"
+    ></textarea>
+  </app-control>
+  <p>
+    <button appButton>
+      Submit
+      <!-- <span class ="icon">⩥</span> -->
+      <span ngProjectAs="icon">⩥</span>
+    </button>
+  </p>
+</form>

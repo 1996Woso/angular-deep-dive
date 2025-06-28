@@ -1,0 +1,15 @@
+<span>
+  <ng-content />
+</span>
+<!-- <ng-content select=".icon" /> -->
+ <!--***************************************-->
+<!-- <span class="icon">
+  <ng-content select="icon" />
+</span> -->
+ <!--***************************************-->
+<!--Fallback content: (if no icon is provided angular will render this default icon)-->
+<span class="icon">
+    <ng-content select="icon">
+        -
+    </ng-content>
+</span>
